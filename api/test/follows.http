@@ -1,0 +1,27 @@
+
+GET http://localhost:3000/api/follows HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M4OTkxMWU3MDZhZjVhN2Y4MzhkNDAiLCJpYXQiOjE3NDEyMDI4NjgsImV4cCI6MTc0MTIxMDA2OH0.zfEkUpuuwoqInnk21-JoF-Ry3FdXA0SQnXRmXxV8H1I
+
+###
+GET http://localhost:3000/api/follows/677eb3855e214fb40694c0eb HTTP/1.1
+
+###
+POST http://localhost:3000/api/follows HTTP/1.1
+Content-Type: application/json
+
+{
+    "follower": "677eb3855e214fb40694c0eb",
+    "following": "677eb3855e214fb40694c0eb"
+}
+
+###
+PUT http://localhost:3000/api/follows/677eb3855e214fb40694c0eb HTTP/1.1
+Content-Type: application/json
+
+{
+    "follower": "677eb3855e214fb40694c0eb",
+    "following": "677eb3855e214fb40694c0eb"
+}
+
+###
+DELETE http://localhost:3000/api/follows/677eb3855e214fb40694c0eb HTTP/1.1

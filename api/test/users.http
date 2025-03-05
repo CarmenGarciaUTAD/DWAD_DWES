@@ -1,0 +1,36 @@
+
+
+GET http://localhost:3000/api/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2M4OTkxMWU3MDZhZjVhN2Y4MzhkNDAiLCJpYXQiOjE3NDEyMDI4NjgsImV4cCI6MTc0MTIxMDA2OH0.zfEkUpuuwoqInnk21-JoF-Ry3FdXA0SQnXRmXxV8H1I
+
+###
+GET http://localhost:3000/api/users/677eb3855e214fb40694c0eb HTTP/1.1
+
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "gandalf",
+    "fullName": "Gandalf El Blanco",
+    "description": "Soy un istar ('mago'), uno de los espíritus maia enviados a la Tierra Media durante la Tercera Edad del Sol para ayudar a sus habitantes en la lucha contra el «señor oscuro» Sauron.",
+    "email": "gandalfelblanco@example.com",
+    "avatar": "http://example.com/images/gandalf.jpg",
+    "password": "ElMejorMago"
+}
+
+###
+PUT http://localhost:3000/apis/users/677eb3855e214fb40694c0eb HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "hecpabe",
+    "fullName": "Héctor Paredes Benavides",
+    "description": "Nueva descripción de prueba",
+    "email": "test@gmail.com",
+    "avatar": "...",
+    "password": "testpass"
+}
+
+###
+DELETE http://localhost:3000/api/v1/users/677eb3855e214fb40694c0eb HTTP/1.1
